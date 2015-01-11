@@ -22,15 +22,9 @@ $(document).ready(function() {
 	});
 
 	$('.sec-1-btn').hover(function() {
-		$(this).children('.icon').css({
-			color: '#fff',
-			transform: 'scale(1.1)'
-		});
+		$(this).children('.icon').css('color', '#fff');
 	}, function() {
-		$(this).children('.icon').css({
-			color: '#2c6ebd',
-			transform: 'scale(1)'
-		});
+		$(this).children('.icon').css('color', '#2c6ebd');
 	});
 
  });
