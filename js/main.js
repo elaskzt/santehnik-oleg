@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
+	//Vivus
+
 	var line = new Vivus('svg-line', {type: 'scenario-sync', duration: 100, start: 'autostart'});
+
+	//Animation
 
 	var wow = new WOW({	mobile: false	});
 	wow.init();
