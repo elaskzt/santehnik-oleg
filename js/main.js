@@ -6,8 +6,8 @@ $(document).ready(function() {
 
 	//Animation
 
-	// var wow = new WOW({	mobile: false	});
-	// wow.init();
+	var wow = new WOW({	mobile: false	});
+	wow.init();
 
 	$('.sec-2-txt-block').hover(function() {
 		$(this).find('.icon').css('color', '#4a9ffc');
