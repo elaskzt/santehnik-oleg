@@ -6,8 +6,8 @@ $(document).ready(function() {
 
 	//Animation
 
-	var wow = new WOW({	mobile: false	});
-	wow.init();
+	// var wow = new WOW({	mobile: false	});
+	// wow.init();
 
 	$('.sec-2-txt-block').hover(function() {
 		$(this).find('.icon').css('color', '#4a9ffc');
@@ -29,6 +29,12 @@ $(document).ready(function() {
 		$(this).children('.icon').css('color', '#fff');
 	}, function() {
 		$(this).children('.icon').css('color', '#2c6ebd');
+	});
+
+	$('.oleg-foto').hover(function() {
+		$(this).removeClass('grayscale');
+	}, function() {
+		$(this).addClass('grayscale');
 	});
 
  });

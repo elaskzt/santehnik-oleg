@@ -91,6 +91,10 @@ ul {
 	}
 }
 
+.shadow {
+box-shadow: inset 0px 0px 10px 4px rgba(45,53,88,1);
+}
+
 
 /********************
 HEADER
@@ -118,11 +122,11 @@ HEADER
 	font-size: 30px;
 	line-height: .8;
 	color: #48a1fe;
+	text-align: right;
 }
 
 .descript span {
 	display: block;
-	width: 320px;
 	font-family: 'bebas_neuebook';
 	text-align: right;
 	color: #2d3558;
@@ -135,6 +139,22 @@ HEADER
 	line-height: 1;
 	text-align: right;
 	color: #2d3558;
+}
+
+@media (max-width: 992px) {
+	.logo-header {
+		max-width: 130px;
+	}
+
+	.descript {
+		font-size: 24px;
+		max-width: 260px;
+	}
+
+	.header-tel {
+		font-size: 46px;
+	}
+
 }
 
 
@@ -166,7 +186,8 @@ SEC-1
 	position: relative;
 	padding: 15px 0 0 10px;
 	float: left;
-	width: 331px;
+	max-width: 331px;
+	width: 100%;
 	height: 146px;
 	background-color: rgba(255,255,255,.5);
 	border: 1px solid #4a9ffc;
@@ -272,7 +293,7 @@ SEC-1
 	display: block;
 	width: 100%;
 	max-width: 380px;
-	height: 86px;
+	/*height: 86px;*/
 	font-family: 'bebas_neuebook';
 	text-align: left;
 	color: #dcfffd;
@@ -288,7 +309,7 @@ SEC-1
 	padding-top: 18px;
 	padding-right: 15px;
 	float: left;
-	height: 100%;
+	min-height: 83px;
 	font-size: 45px;
 	color: #2c6ebd;
 	border-right: 1px solid #2c6ebd;
@@ -332,6 +353,68 @@ SEC-1
 	font-family: 'helveticaneuecyrbold';
 	color: #fff;
 	background-color: #2d3557;
+}
+
+@media (max-width: 992px) {
+
+	.sec-1-citation {
+		margin-top: 50px;
+		max-width: 331px;
+	}
+
+	.sec-1-citation-img {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 19px;
+	}
+
+	.sec-1-know-more {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.sec-1-citation-txt:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 13px 13px 13px;
+		border-color: transparent transparent #49a0fc transparent;
+	}
+
+	.button-txt {
+		font-size: 24px;
+		top: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo-header {
+		position: relative;
+		max-width: 100px;
+	}
+
+	.descript {
+		max-width: none;
+		text-align: center;
+		font-size: 36px;
+	}
+
+	.descript span {
+		text-align: center;
+	}
+
+	.header-tel {
+		text-align: center;
+		margin-bottom: 10px;
+	}
 }
 
 
@@ -401,6 +484,56 @@ SEC-2
 	text-decoration: underline;
 }
 
+@media (max-width: 992px) {
+	.sec-2-txt {
+		font-size: 16px;
+	}
+
+	.sec-2 .icon {
+		font-size: 28px;
+		width: 60px;
+		height: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.sec-1-citation {
+		max-width: none;
+	}
+
+	.sec-1-citation-txt {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+
+	.sec-1-know-more {
+		max-width: 331px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		text-align: right;
+	}
+
+	.sec-1-txt-right-top {
+		margin-top: 30px;
+	}
+
+	.sec-1-btn {
+		margin-bottom: 20px;
+	}
+
+	.oleg-foto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sec-2-header {
+		font-size: 50px;
+	}
+}
+
 
 
 /********************
@@ -418,6 +551,14 @@ SEC-3
 
 .oleg-foto {
 	margin-top: 37px;
+	transition: all linear .1s;
+}
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    transition: all linear .1s;
 }
 
 .sec-3-quote {
@@ -504,6 +645,67 @@ SEC-3
 	color: #4a9ffc;
 }
 
+@media (max-width: 992px) {
+	.sec-3-txt {
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+
+	.sec-3-txt:first-of-type {
+		margin-top: 48px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.sec-3-txt:first-of-type {
+		margin-top: 18px;
+	}
+
+	.sec-3-quote {
+		margin-top: 10px;
+	}
+
+	.sec-3-txt:last-of-type,
+	.sec-3-txt:nth-of-type(2) {
+		text-align: center;
+	}
+
+	.sec-3-advantages-left-txt {
+		max-width: none;
+		width: 42%;
+	}
+
+	.sec-3-advantages-right-txt {
+		max-width: none;
+		width: 54%;
+	}
+
+}
+
+@media (max-width: 577px) {
+	.sec-3-advantages-block:after {
+		content: '';
+	}
+	.sec-3-advantages-block {
+		border-bottom: 1px solid;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.sec-3-advantages-block:last-child {
+		border-bottom: none;
+	}
+
+	.sec-3-advantages-right-txt {
+		width: 45%;
+	}
+
+	.sec-3-header {
+		font-size: 56px;
+	}
+}
+
 
 
 /********************
@@ -575,6 +777,29 @@ SEC-4
 
 .garanty-block span {
 	font-family: 'bebas_neuebold';
+}
+
+@media (max-width: 768px) {
+	.sec-4-header {
+		font-size: 70px;
+	}
+
+	.sec-4-list {
+		margin-left: 0;
+	}
+
+	.sec-4-list {
+		text-align: center;
+	}
+
+	.sec-4-list .icon {
+		margin-right: 0;
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
 }
 
 
@@ -693,6 +918,16 @@ SEC-5
 	color: #2d3558;
 }
 
+@media (max-width: 992px) {
+	.section-feedback-left {
+		min-height: 578px;
+	}
+
+	.client-name {
+		font-size: 34px;
+	}
+}
+
 
 
 /********************
@@ -776,6 +1011,17 @@ SEC-6
 	font-family: 'bebas_neuebold';
 }
 
+@media (max-width: 768px) {
+	.sec-6 .col-md-6:nth-of-type(2):after {
+		top: 50%;
+		right: 0;
+		left: 0;
+		bottom: auto;
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+}
+
 
 
 /********************
@@ -787,11 +1033,11 @@ FOOTER
 }
 
 .footer-tel {
-	margin-top: 10px;
 	margin-bottom: 0;
 	font-family: 'bebas_neuebook';
 	font-size: 31px;
 	color: #fff;
+	margin-top: 10px;
 }
 
 .circle {
@@ -827,4 +1073,10 @@ FOOTER
 
 .logo-svg:hover {
 	fill: #d9fffb;
+}
+
+@media (max-width: 992px) {
+	.footer-tel {
+		text-align: center;
+	}
 }
