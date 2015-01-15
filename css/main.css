@@ -188,10 +188,10 @@ SEC-1
 	float: left;
 	max-width: 331px;
 	width: 100%;
-	height: 146px;
 	background-color: rgba(255,255,255,.5);
 	border: 1px solid #4a9ffc;
 	border-radius: 6px;
+	height: auto;
 }
 
 .sec-1-citation-txt:after {
@@ -414,6 +414,16 @@ SEC-1
 	.header-tel {
 		text-align: center;
 		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 370px) {
+	.sec-1-citation-txt p {
+		font-size: 18px;
+	}
+
+	.sec-1-citation-txt p:last-of-type {
+		font-size: 18px;
 	}
 }
 
