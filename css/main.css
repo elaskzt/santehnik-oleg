@@ -92,7 +92,7 @@ ul {
 }
 
 .shadow {
-	box-shadow: inset 0 0 10px 4px rgba(45,53,88,1);
+	box-shadow: inset 0 0 10px 4px rgba(45,53,88,.8);
 }
 
 
@@ -1086,4 +1086,105 @@ FOOTER
 	.footer-tel {
 		text-align: center;
 	}
+}
+
+
+
+/********************
+MODAL
+********************/
+
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 480px;
+	}
+}
+
+.modal-backdrop.in {
+	opacity: 1;
+}
+
+.modal-backdrop {
+	background-image: url(../img/bg-blue.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: transparent;
+}
+
+.modal-dialog {
+	padding-top: 10%;
+}
+
+.modal-header {
+	background-color: #dbfffc;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.modal-title {
+	font-family: 'bebas_neuebold';
+	font-size: 30px;
+	color: #2d3558;
+	text-align: center;
+}
+
+.modal-body {
+	background-color: #bcecfb;
+	padding: 20px;
+}
+
+.form-modal {
+
+}
+
+.form-group {
+	position: relative;
+}
+
+.form-control {
+	border-color: #e5e5e5;
+	border-radius: 0;
+	height: 46px;
+	font-size: 16px;
+	
+}
+
+.form-modal-btn {
+	font-family: 'bebas_neuebold';
+	color: #dcfffd;
+	background-color: #48a0fd;
+	font-size: 32px;
+	border: none;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.modal-dialog .glyphicon {
+	color: #555;
+	position: absolute;
+	right: 0;
+	line-height: 48px;
+	font-size: 18px;
+	border-left: 1px solid #ccc;
+	text-align: center;
+	width: 30px;
+	line-height: 44px;
+	width: 48px;
+}
+
+.close {
+	color: #fff;
+	opacity: .9;
+	text-shadow: none;
+	margin-top: 10px;
+	margin-right: 30px;
+	font-size: 18px;
+	position: relative;
+}
+
+.close .glyphicon {
+	position: absolute;
+	font-size: 18px;
+	right: -22px;
 }
