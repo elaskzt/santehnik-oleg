@@ -37,11 +37,22 @@ $(document).ready(function() {
 		$(this).addClass('grayscale');
 	});
 
+	//Parallax
 
 	$(function(){
 		$.stellar({
 			horizontalScrolling: false
 		});
 	});
+
+	//Preload image
+
+	$.preloadImages = function() {
+	  for (var i = 0; i < arguments.length; i++) {
+	    $("<img />").attr("src", arguments[i]);
+	  }
+	}
+
+	$.preloadImages("./img/bg-cyan.jpg");
 
  });
